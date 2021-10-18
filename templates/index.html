@@ -1,0 +1,51 @@
+{% extends "base.html" %}
+{% block header %}
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>北京剧本杀店铺大全</title>
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        
+{% endblock %}
+{% block content %}
+        <section class="page-section clearfix">
+            <div class="container">
+                <div class="intro">
+                    <img class="intro-img img-fluid mb-3 mb-lg-0 rounded" src="{{ url_for('static', filename='assets/img/intro.jpg') }}" alt="..." />
+                    <div class="intro-text left-0 text-center bg-faded p-5 rounded">
+                        <h2 class="section-heading mb-4">
+                            <span class="section-heading-upper">真实图片</span>
+                            <span class="section-heading-lower">真实点评</span>
+                        </h2>
+                        <p class="mb-3">在这里，您可以完美计划在北京的剧本杀活动及其他相关活动！</p>
+                        <div class="intro-button mx-auto"><a class="btn btn-primary btn-xl" href="#!">Visit Us Today!</a></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="page-section cta">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-9 mx-auto">
+                        <div class="cta-inner bg-faded text-center rounded">
+                            <h2 class="section-heading mb-4">
+                                <span class="section-heading-upper">Our Promise</span>
+                                <span class="section-heading-lower">To You</span>
+                            </h2>
+                            <p class="mb-0">剧本杀+逛街+吃饭+夜生活，我们帮您一网打尽！</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="{{ url_for('static', filename='js/scripts.js') }}"></script>
+    </body>
+{% endblock %}
+</html>
